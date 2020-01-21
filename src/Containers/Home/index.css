@@ -1,0 +1,14 @@
+#home {
+}
+.home-title,
+.home-desc {
+  font-weight: bold;
+  color: black;
+}
+.home-title {
+  font-size: 3em;
+}
+.home-desc {
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.65);
+}

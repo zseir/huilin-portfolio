@@ -1,0 +1,9 @@
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+.contact-icons a {
+  font-size: 3em;
+  margin-right: 15%;
+}

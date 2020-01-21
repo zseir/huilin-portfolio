@@ -1,25 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Home from "./Containers/Home";
+import About from "./Containers/About";
+import Projects from "./Containers/Projects";
+import Contact from "./Containers/Contact";
+
+import "./App.css";
+import "antd/dist/antd.css";
 
 function App() {
+  const navigation = [
+    { name: "Home", path: "/", component: Home },
+    { name: "About", path: "/about", component: About },
+    { name: "Projects", path: "/projects", component: Projects },
+    { name: "Contact", path: "/contact", component: Contact }
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {/* <div> */}
+      <Header />
+      <Switch>
+        {navigation.map(nav => {
+          return (
+            <Route
+              key={nav.name}
+              exact
+              path={nav.path}
+              component={nav.component}
+            />
+          );
+        })}
+      </Switch>
+      {/* <Footer />   */}
+      {/* </div> */}
+    </Router>
   );
 }
 
