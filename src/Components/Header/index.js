@@ -18,30 +18,23 @@ export default class Header extends Component {
       { name: "Home", path: "/" },
       { name: "About", path: "/about" },
       { name: "Projects", path: "/projects" },
+      { name: "Blog", href: "https://tayhuilin.wixsite.com/portfolio"},
       { name: "Contact", path: "/contact" }
     ];
     return (
       <div id="header">
         <div className="nav-container">
-          {navigation.map(nav => (
-            <Link className="nav-item" to={nav.path}>
-              {nav.name}
+          {navigation.map(nav => {
+            if (nav.path) {
+              return <Link className="nav-item" to={nav.path}>
+              <span>{nav.name}</span>
             </Link>
-          ))}
+            } 
+            else {
+              return <a className='nav-item' target="_blank" href={nav.href}>{nav.name}</a>
+            }
+            })}
         </div>
-        <div className="footer">&copy; {new Date().getFullYear()}, Hui Lin</div>
-        {/* <Menu
-          className="header-navigation"
-          onClick={this.handleClick}
-          selectedKeys={[this.state.keys]}
-          mode="horizontal"
-        >
-          {navigation.map(nav => (
-            <Menu.Item key={nav.name.toLowerCase()}>
-              <Link to={nav.path}>{nav.name}</Link>
-            </Menu.Item>
-          ))}
-        </Menu> */}
       </div>
     );
   }

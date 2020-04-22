@@ -30,5 +30,15 @@ export const projectList = [
     category: "School",
     language: "Java",
     link: "https://github.com/zseir/MADRecipes"
+  },
+  {
+    name: "Patch",
+    description:
+      "A mobile application that encourages interaction - match up with other users who have similar hobbies and interests, connect & socialize with new friends",
+    image:
+      "https://raw.githubusercontent.com/zseir/Patch/master/Patch%20Poster%20Edited.png",
+    category: "School",
+    language: "Java",
+    link: "https://github.com/zseir/Patch/"
   }
 ];

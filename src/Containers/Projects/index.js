@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ProjectDetail from "../../Components/ProjectDetail";
 import { projectList } from "../../constants";
-import Grid from "antd/lib/card/Grid";
 import { Row, Col } from "antd";
 
 export default class Projects extends Component {
@@ -14,6 +13,7 @@ export default class Projects extends Component {
           polytechnic! It also includes some personal projects done for
           self-learning purposes.
           <br />
+          <br />
           More projects can be found on my&nbsp;
           <a
             href="https://github.com/zseir/"
@@ -24,9 +24,9 @@ export default class Projects extends Component {
           </a>
           !
         </p>
-        <Row gutter={16}>
+        <Row justify='space-around' gutter={16}>
           {projectList.map(project => (
-            <Col span={8}>
+            <Col span={12}>
               <ProjectDetail project={project} />
             </Col>
           ))}

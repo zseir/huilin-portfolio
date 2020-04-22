@@ -6,14 +6,12 @@ export default class About extends Component {
       <div id="about" className="page-container">
         <div className="page-title">About Me</div>
         <div className="page-desc">
-          Hello! I'm Hui Lin, a Singaporean web developer, currently in my 3rd
-          year of studies in Ngee Ann Polytechnic's Information Technology. I
-          have special interests in web and mobile applications development and
-          software engineering!
+          Hello! I'm Hui Lin, a developer from Singapore.
           <br />
           <br />
           This is where I display my projects I've done in the course of my
-          development journey :)
+          development journey. I enjoy learning about new technologies and creating things with them. I have special interests in web and mobile applications development and
+          software engineering!
           <br />
           <br />
           More about my qualifications in my&nbsp;
