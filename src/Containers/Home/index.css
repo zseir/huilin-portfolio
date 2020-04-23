@@ -1,9 +1,13 @@
 #home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home-title,
 .home-desc {
   font-weight: bold;
   color: black;
+  margin: auto;
 }
 .home-title {
   font-size: 3em;

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import "./index.css";
-import { Menu } from "antd";
 
 export default class Header extends Component {
   state = {
@@ -31,7 +30,7 @@ export default class Header extends Component {
             </Link>
             } 
             else {
-              return <a className='nav-item' target="_blank" href={nav.href}>{nav.name}</a>
+              return <a className='nav-item' target="_blank" rel="noopener noreferrer" href={nav.href}>{nav.name}</a>
             }
             })}
         </div>

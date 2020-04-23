@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from "./Components/Header";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import Home from "./Containers/Home";
 import About from "./Containers/About";
 import Projects from "./Containers/Projects";
@@ -33,7 +33,7 @@ function App() {
           );
         })}
       </Switch>
-      <Footer />  
+      {/* <Footer />   */}
     </Router>
   );
 }

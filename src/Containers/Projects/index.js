@@ -16,7 +16,7 @@ export default class Projects extends Component {
           <br />
           More projects can be found on my&nbsp;
           <a
-            href="https://github.com/zseir/"
+            href="https://github.com/huilynt/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -26,7 +26,7 @@ export default class Projects extends Component {
         </p>
         <Row justify='space-around' gutter={16}>
           {projectList.map(project => (
-            <Col span={12}>
+            <Col span={8}>
               <ProjectDetail project={project} />
             </Col>
           ))}

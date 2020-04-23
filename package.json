@@ -2,7 +2,7 @@
   "name": "huilin-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zseir.github.io/",
+  "homepage": "https://huilynt.github.io/",
   "dependencies": {
     "antd": "^3.25.3",
     "gh-pages": "^2.1.1",

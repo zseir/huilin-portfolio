@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Resume_TayHuiLin_010420 from '../../Assets/Resume_TayHuiLin_010420.pdf'
 
 export default class About extends Component {
   render() {
@@ -16,7 +17,7 @@ export default class About extends Component {
           <br />
           More about my qualifications in my&nbsp;
           <a
-            href="https://drive.google.com/file/d/1pcZ2O3Tn-5FgJu-CZ8S2KxqPmg5R9H6h/view"
+            href={Resume_TayHuiLin_010420}
             target="_blank"
             rel="noopener noreferrer"
           >
