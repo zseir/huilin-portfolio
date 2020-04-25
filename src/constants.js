@@ -31,7 +31,8 @@ export const projectList = [
       MAD_Recipes,
     category: "School",
     language: "Java",
-    link: "https://github.com/huilynt/MADRecipes"
+    link: "https://github.com/huilynt/MADRecipes",
+    live: "https://play.google.com/store/apps/details?id=com.madrecipes.app.madrecipes&hl=gsw"
   },
   {
     name: "Patch",
@@ -49,6 +50,7 @@ export const projectList = [
     image: FED_Assignment,
     category: "School",
     language: "HTML, CSS, jQuery",
-    link: "https://github.com/huilynt/FED_Assignment/"
+    link: "https://github.com/huilynt/FED_Assignment/",
+    live: "https://huilynt.github.io/FED_Assignment/index.html"
   }
 ];

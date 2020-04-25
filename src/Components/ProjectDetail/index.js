@@ -23,6 +23,11 @@ export default class ProjectDetail extends Component {
                 <div className="project-link">View in Github</div>
               </a>
             )}
+            {project.live && (
+              <a href={project.live} target="_blank" rel="noopener noreferrer">
+                <div className="project-live">See more</div>
+              </a>
+            )}
             </div>
         </div>
       </div>
